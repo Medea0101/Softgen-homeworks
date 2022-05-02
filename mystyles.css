@@ -1,0 +1,77 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    list-style-type: none;
+}
+body{
+    width:100%;
+    display: flex;
+    justify-content: center;
+}
+h1{
+    width:100%;
+    display: flex;
+    justify-content:flex-end;
+    font-size: 16px;
+    padding: 10px;
+    text-decoration: underline;
+    color:brown;
+}
+form{
+    width:70%;
+    margin:20px 0px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #E7E7E9;
+}
+.rows{   
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+.labels{
+     width: 20%;
+     padding: 10px 0px 0px 20px;
+ }
+.inputs{
+    width: 80%;
+    border-radius: 10%;
+}
+label{
+    width:100%;
+}
+input{
+    width: 80%;
+    padding: 10px;
+}
+.genderLabel{
+    width:18%;
+    padding: 10px 0px 0px 20px;
+}
+.genderInputs{
+    width: 24%;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    padding: 10px 0px 0px 0px;
+}
+#qualification{
+    padding: 4px;
+    padding: 10px 10px;
+}
+.checkboxs{
+    width:100%;
+}
+.checkboxInput{
+    width:8%;
+}
+button{
+    width: 200px;
+    height: 50px;
+    background-color: green;
+    color:#ffffff;
+    border-radius: 5%;
+}
