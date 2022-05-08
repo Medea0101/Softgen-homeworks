@@ -1,0 +1,29 @@
+header{
+    background-color: #444565;
+}
+h1{
+    display: flex;
+    justify-content: center;
+}
+h1 img{
+    width:40%;
+}
+h2{
+    font-size: 80px;
+    color:#ffffff;
+    font-style: italic;
+    display: flex;
+    justify-content: flex-start;
+}
+@media screen and (max-width:992px){
+    h2{
+        font-size: 50px;
+        justify-content: center;
+    }
+}
+.nav.flex-column a{
+    border-bottom: 2px dotted #6D3716;
+    font-size: 20px;
+    color: #6D3716;
+    text-decoration: none;
+}
