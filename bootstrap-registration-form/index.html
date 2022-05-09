@@ -14,43 +14,43 @@
     <title>Registration Form</title>
 </head>
 <body>
-    <form style="padding:20px;">
+    <form style="padding:40px 60px; background-color:#F1F0F1">
         <label class="row mb-3">
           <div class="col-sm-2 col-form-label">First Name:</div>
-          <div class="col-sm-8">
-            <input type="text" class="form-control" placeholder="Enter your first name">
+          <div class="col-sm-6">
+            <input type="text" class="form-control" placeholder="Enter your first name" required>
           </div>
         </label>
         
         <label class="row mb-3">
             <div class="col-sm-2 col-form-label">Last Name:</div>
-            <div class="col-sm-8">
-              <input type="text" class="form-control" placeholder="Enter your last name">
+            <div class="col-sm-6">
+              <input type="text" class="form-control" placeholder="Enter your last name" required>
             </div>
         </label>
 
         <label class="row mb-3">
             <div class="col-sm-2 col-form-label">Email:</div>
-            <div class="col-sm-8">
-              <input type="email" class="form-control" placeholder="it should contain @">
+            <div class="col-sm-6">
+              <input type="email" class="form-control" placeholder="it should contain @" required>
             </div>
         </label>
 
         <label class="row mb-3">
             <div class="col-sm-2 col-form-label">Mobile:</div>
-            <div class="col-sm-8">
+            <div class="col-sm-6">
               <input type="text" class="form-control" placeholder="10 digits are allowed">
             </div>
         </label>
 
         <fieldset class="row mb-3">
           <legend class="col-form-label col-sm-2 pt-0">Gender:</legend>
-          <div class="col-sm-8">
+          <div class="col-sm-6" style="display:flex; flex-direction:row">
             <label class="form-check">
               <input class="form-check-input" type="radio" name="genderRadio" value="male">
               <div class="form-check-label">Male</div>
             </label>
-            <label class="form-check">
+            <label class="form-check" style="margin: 0 10px">
               <input class="form-check-input" type="radio" name="genderRadio" value="female">
               <div class="form-check-label">Female</div>
             </label>
@@ -78,36 +78,36 @@
 
         <label class="row mb-3">
             <div class="col-sm-2 col-form-label">Address:</div>
-            <div class="col-sm-8">
+            <div class="col-sm-6">
                 <textarea class="col-sm-8 form-control"></textarea>
             </div>
         </label>
 
         <label class="row mb-3">
             <div class="col-sm-2 col-form-label">City:</div>
-            <div class="col-sm-8">
+            <div class="col-sm-6">
                 <input type="text" class="form-control">
             </div>
         </label>
 
         <label class="row mb-3">
             <div class="col-sm-2 col-form-label">Area PIN:</div>
-            <div class="col-sm-8">
+            <div class="col-sm-6">
                 <input type="text" class="form-control">
             </div>
         </label>
 
         <label class="row mb-3">
             <div class="col-sm-2 col-form-label">State:</div>
-            <div class="col-sm-8">
+            <div class="col-sm-6">
                 <input type="text" class="form-control">
             </div>
         </label>
 
         <label class="row mb-3">
             <div class="col-sm-2 col-form-label">Qualification:</div>
-            <div class="col-sm-4">
-                <select class="col-sm-4">
+            <div class="col-sm-5">
+                <select class="col-sm-5" style="padding:4px">
                     <option>select qualification</option>
                     <option>qualification 1</option>
                     <option>qualification 2</option>
@@ -117,11 +117,10 @@
                 </select>
             </div>
         </label>
-
         
         <div class="row mb-3">
           <legend class="col-form-label col-sm-2 pt-0">Specialization:</legend>
-          <div class="col-sm-8">    
+          <div class="col-sm-6">    
             <label class="form-check">
               <input class="form-check-input" type="checkbox">
               <div class="form-check-label">Comuter Science</div>
@@ -143,7 +142,7 @@
 
         <label class="row mb-3">
             <div class="col-sm-2 col-form-label">Password</div>
-            <div class="col-sm-8">
+            <div class="col-sm-6">
               <input type="password" class="form-control">
             </div>
         </label>
