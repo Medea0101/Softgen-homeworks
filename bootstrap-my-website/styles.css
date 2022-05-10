@@ -7,7 +7,7 @@ a{
     align-items: center;
 }
 a img{
-    width:50%;
+    width:40%;
 }
 h2{
     font-size: 80px;
@@ -24,4 +24,7 @@ h2{
     font-size: 20px;
     color: #6D3716;
     text-decoration: none;
+}
+p{
+    text-align: justify;
 }
