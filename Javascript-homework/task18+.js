@@ -2,3 +2,5 @@ const arr = ['ერთი', 'ორი', 'სამი', 'ოთხი', 'ხ�
 
 let text = arr.toString();
 console.log(text);
+
+// join
