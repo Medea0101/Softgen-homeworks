@@ -31,6 +31,10 @@ const rectangles = [
     }      
 ];
 
-for (i = 0; i < rectangles.length; i++){
-    (console.log(rectangles[i].id + ":" + " " + rectangles[i].width*rectangles[i].height))
+for (i in rectangles){
+    let id  = rectangles[i].id;
+    let width = rectangles[i].width;
+    let height = rectangles[i].height;
+    let result = id + ":" + " " + width*height;
+    (console.log(result))
 }

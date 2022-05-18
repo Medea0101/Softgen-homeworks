@@ -31,8 +31,14 @@ const rectangles = [
     }      
 ];
 
-for (let i = 0; i < rectangles.length; i++){
-    if(rectangles[i].color == 'green' || rectangles[i].color == 'red'){
-        console.log(rectangles[i].id + ": " + rectangles[i].width*rectangles[i].height)
+for (i in rectangles){
+    let color = rectangles[i].color;
+    let id  = rectangles[i].id;
+    let width = rectangles[i].width;
+    let height = rectangles[i].height;
+    
+    if(color == 'green' || color == 'red'){
+        let result = id + ":" + " " + width*height;
+        (console.log(result))
     }
 }
