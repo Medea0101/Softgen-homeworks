@@ -77,5 +77,8 @@ const rectangles2 = [
 ];
 
 
-rectangles2
-.forEach((el) => {console.log((el.id + ': ' + el.width * el.height))});
+// rectangles2
+// .forEach((el) => {console.log((el.id + ': ' + el.width * el.height))});
+
+rectangles2.map((rect) => rect.id + ': ' + rect.width * rect.height)
+.forEach((line) => console.log(line))
