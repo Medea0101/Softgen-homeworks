@@ -80,7 +80,9 @@ const rectangles = [
     }      
 ];
 
-rectangles.filter((el) => el.color == 'green' || el.color == 'red')
-.forEach((el) => console.log(el.id + ': ' + el.width * el.height))
+rectangles
+.filter((el) => el.color == 'green' || el.color == 'red')
+.map((rect) => rect.id + ': ' + rect.width * rect.height)
+.forEach((line) => console.log(line))
     
     
