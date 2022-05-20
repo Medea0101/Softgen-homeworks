@@ -1,9 +1,8 @@
 
 const numbersArray = [2, 0, 6, 3, -11, 24, 5, 101, 11, 1, 17, 9];
-
 function maxNumber(x){
     let max = x[0];
-    for ( let i = 0; i < x.length; i++){
+    for ( let i in x){
         if(x[i] > max){
            max = x[i];
         }
