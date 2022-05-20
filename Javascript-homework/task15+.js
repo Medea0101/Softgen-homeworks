@@ -10,4 +10,6 @@ function is_string(){
         throw "error"
     }
 }
-console.log(is_string())
+console.log(is_string(x))
+
+

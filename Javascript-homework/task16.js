@@ -11,3 +11,5 @@ function count(string) {
   }
   
   console.log(count(text));
+
+  
