@@ -31,7 +31,7 @@
 //     }      
 // ];
 
-// for (i in rectangles){
+// for (let i in rectangles){
 //     let color = rectangles[i].color;
 //     let id  = rectangles[i].id;
 //     let width = rectangles[i].width;
@@ -45,7 +45,7 @@
 
 
 
-//using map and forEach
+//using filter map and forEach
 
 const rectangles = [
     {
@@ -81,7 +81,7 @@ const rectangles = [
 ];
 
 rectangles
-.filter((el) => el.color == 'green' || el.color == 'red')
+.filter((rect) => rect.color == 'green' || rect.color == 'red')
 .map((rect) => rect.id + ': ' + rect.width * rect.height)
 .forEach((line) => console.log(line))
     

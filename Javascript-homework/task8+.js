@@ -10,4 +10,4 @@
 
 let maxNum = ((a, b) => a > b ? a : b)
 
-console.log(maxNum(12,5))
+console.log(maxNum(12,25))

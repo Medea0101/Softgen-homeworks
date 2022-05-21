@@ -31,7 +31,7 @@
 //     }      
 // ];
 
-// for (i in rectangles){
+// for (let i in rectangles){
 //     let id  = rectangles[i].id;
 //     let width = rectangles[i].width;
 //     let height = rectangles[i].height;
@@ -41,7 +41,7 @@
 
 
 
-// using forEach
+// using  map and forEach
 
 const rectangles2 = [
     {
@@ -76,9 +76,6 @@ const rectangles2 = [
     }      
 ];
 
-
-// rectangles2
-// .forEach((el) => {console.log((el.id + ': ' + el.width * el.height))});
-
-rectangles2.map((rect) => rect.id + ': ' + rect.width * rect.height)
-.forEach((line) => console.log(line))
+rectangles2
+    .map((rect) => rect.id + ': ' + rect.width * rect.height)
+    .forEach((line) => console.log(line))

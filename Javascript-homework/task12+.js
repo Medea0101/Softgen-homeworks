@@ -1,9 +1,8 @@
 
-let x = '*';
-let i = 0;
-
-while (i < 5){
-    i++;
-    console.log(x)
-    x += '*'
+let z = '*';
+let y = 0;
+while (y < 5){
+    y++
+    console.log(z)
+    z += '*'
 }
