@@ -30,7 +30,8 @@ let multiply = numbers
 
     const numbers2 = [-2, 0, 6, 3, -11, 4, -5, 10, 11, -1, 7, 9];
     console.log(
-        numbers2.reduce((total, num) => total + num, 0)
+        numbers2
+        .reduce((total, num) => total + num, 0)
     )
 
     const numbers3 = [-2, 0, 6, 3, -11, 4, -5, 10, 11, -1, 7, 9];
@@ -86,3 +87,66 @@ let multiply = numbers
     console.log(reduced4);
 
 
+
+
+    
+
+//Write a function sumTo(n) that calculates the sum of numbers 1 + 2 + ... + n.
+let sum = 0;
+function sumTo(n){
+    for(i = 1; i <= n; i++){
+        sum += i;
+    }
+    return sum
+}
+console.log(sumTo(5))
+
+
+//with recursion
+
+function sumTill(n){
+    if (n == 1){
+        return 1;
+    }
+    return n + sumTill(n-1);
+}
+console.log(sumTill(5))
+
+//The task is to write a function factorial(n) that calculates n! using recursive calls.
+
+function factorial(n) {
+    if (n == 1){
+        return 1;
+    }
+    return n * factorial(n-1);
+}
+console.log(factorial(5))
+
+
+function countFactorial(n){
+    return (n != 1) ? n * countFactorial(n -1) : 1;
+}
+console.log(countFactorial(5))
+
+// Write a function fibonacci(n) that returns the n-th Fibonacci number.
+
+function fibonacci(n){
+    if (n <= 1){
+        return n;
+    }
+    return fibonacci(n-1) + fibonacci(n-2)
+}
+console.log(fibonacci(7))
+
+
+
+
+let num = 0;
+
+function numbersTo() {
+    for(let i = 0; i <= 10; i++){
+        console.log(i)
+    }
+    return num++;
+}
+console.log(numbersTo())

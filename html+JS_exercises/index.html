@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    function passwordHandler(){
+        const statusEl = document.querySelector('.status');
+        const passwordEl = document.querySelector('input[name=password]');
+        const verifyEl = document.querySelector('input[name=verify-password]');
+            if(passwordEl.value !== verifyEl.value){
+                statusEl.innerText = "passwords don't match";
+            } else if (passwordEl.value.length > 3){
+                statusEl.innerText = 'valid passwords';
+            } else {
+                statusEl.innerText = ' ';
+            }
+    }
+</script>
+<body>
+    <form>
+        <div>
+            password
+            <input type="password" name="password" required>
+            verify password
+            <input type="password" name="verify-password" required>
+            <div class="status"></div> 
+        </div>
+        
+    </form>    
+
+    <!-- <script>
+        const passwordEl = document.querySelector('input[name=password]')
+        passwordEl.addEventListener('keyup', passwordHandler)
+        const verifyEl = document.querySelector('input[name=verify-password')
+        verifyEl.addEventListener('keyup', passwordHandler)
+    </script> -->
+
+    <script>
+        document
+            .querySelectorAll('input[type=password')
+            .forEach((el) => el.addEventListener('keyup', passwordHandler))
+    </script>
+
+</body>
+</html>

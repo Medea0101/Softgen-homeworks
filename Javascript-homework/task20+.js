@@ -8,6 +8,10 @@ const urls = [
     'http://example.com'
     ];
 
-    for(let i of urls){
-        if(i.includes('http')) console.log(i);
-    }
+    // for(let text of urls){
+    //     if(text.includes('http')) console.log(text);
+    // }
+
+
+const httpUrls = urls
+    .map ((url) => url.includes('http') && console.log(url))
