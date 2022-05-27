@@ -9,8 +9,7 @@ while (y < 5){
 
 
 
-// 2
-
+// version 2
 
 function draw(n){
     for (let i = 1; i <= n; i++){
