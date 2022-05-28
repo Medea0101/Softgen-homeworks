@@ -13,5 +13,4 @@ const urls = [
     // }
 
 
-const httpUrls = urls
-    .map ((url) => url.includes('http') && console.log(url))
+urls.forEach (url => url.includes('http') && console.log(url))

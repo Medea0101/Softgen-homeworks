@@ -4,4 +4,5 @@ let wordsReplace = text
     .replace('dolor', 'XXXX')
     .replace('elit', 'XXXX')
     .replace('labore', 'XXXX')
+    
     console.log(wordsReplace)

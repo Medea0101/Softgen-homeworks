@@ -81,8 +81,8 @@ const rectangles = [
 ];
 
 rectangles
-    .filter((rect) => rect.color == 'green' || rect.color == 'red')
-    .map((rect) => rect.id + ': ' + rect.width * rect.height)
-    .forEach((line) => console.log(line))
+    .filter(rect => rect.color == 'green' || rect.color == 'red')
+    .map(rect => rect.id + ': ' + rect.width * rect.height)
+    .forEach(line => console.log(line))
     
     
