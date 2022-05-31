@@ -13,3 +13,4 @@ const wordsCount = text
     }, {})
 
   console.log(wordsCount)
+
