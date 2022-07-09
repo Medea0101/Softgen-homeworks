@@ -1,13 +1,7 @@
 import {Table} from 'react-bootstrap'
-import {useEffect, useState} from 'react';
-import axios from 'axios';
 
-function UsersTable(){
-    const [users, setUsers] = useState([]);
-    useEffect(() => {
-        axios.get('https://jsonplaceholder.typicode.com/users')
-        .then((result) => setUsers(result.data))
-    }, []);
+function UsersTable({data = []}){
+
 
     return(
         <Table>
@@ -23,7 +17,7 @@ function UsersTable(){
             </thead>
             <tbody>
                 {
-                    users.map(user => (
+                    data.map(user => (
                         <tr key = {user.id}>
                             <td>{user.id}</td>
                             <td>{user.name}</td>

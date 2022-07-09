@@ -2,7 +2,7 @@ import {Form, Button, Row, Col} from 'react-bootstrap';
 import {useState} from 'react';
 import axios from 'axios';
 
-function SearchForm(){
+function SearchForm({onSubmit}){
     const initialValues = {
         name: '',
         username: '',
@@ -19,12 +19,17 @@ function SearchForm(){
 
     const search = async (event) => {
         event.preventDefault();
-        console.log(values);
-        const res = await axios.get('https://jsonplaceholder.typicode.com/users', {
-            params: values
-        })
-        console.log(res.data);
+        let params = removeEmptyValues(values);       
+        console.log(params)
+        onSubmit(params)
     }  
+
+    const removeEmptyValues = (values) => {
+        return Object.entries(values)
+            .reduce((params, [key, value]) =>{
+            return value ? {...params, [key]: value} : params
+        }, {})
+    }
 
     return (
         <Form onSubmit={search} onReset={reset}>
